@@ -11,7 +11,7 @@ function tocIt(inputMD, minHeading, maxHeading, ignoreLinex)
     {
         var inputMDLine = inputMDLines[i];
 
-        var codeTag = /^(`{3})(shell)?$/.exec(inputMDLine);
+        var codeTag = /^(`{3})(.*)?$/.exec(inputMDLine);
         if(codeTag)
         {
             codeTagEndExpected = !codeTagEndExpected;
